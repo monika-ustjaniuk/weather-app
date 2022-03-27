@@ -1,0 +1,11 @@
+.weather-list {
+    display: flex;
+}
+
+.weather-list ul li .city {
+    font-weight: bold;
+}
+
+.weather-list ul li span{
+    padding: 20px;
+}

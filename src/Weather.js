@@ -29,6 +29,7 @@ class Weather extends Component {
             /*  console.log(weatherElem); */
 
              this.setState({pogoda: weatherElem})
+             this.setState({sorted: weatherElem})
              
              
          }) 
@@ -62,7 +63,7 @@ class Weather extends Component {
             return (city.stacja.toLowerCase().includes(this._inputSearch.value))
         })
 
-        this.setState({pogoda: cityFilter})
+        this.setState({sorted: cityFilter})
         
       }  
 
@@ -82,7 +83,7 @@ class Weather extends Component {
            {/*  <input onClick={this.tempUp} type="button"/>
             <input onClick={this.tempDown} type="button"/> 
             <input onClick={this.AlfabetUp} type="button"/>  */}
-             <WeatherList pogoda={this.state.pogoda}/>
+             <WeatherList pogoda={this.state.sorted}/>
          </div>
         )}
 

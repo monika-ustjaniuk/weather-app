@@ -1,11 +1,35 @@
-.weather-list {
-    display: flex;
-}
+
 
 .weather-list ul li .city {
     font-weight: bold;
 }
 
 .weather-list ul li span{
-    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+
+}
+
+li {
+    border: 1px solid black;
+    height: 150px;
+    width: 200px;
+    padding: 15px;
+    
+}
+
+li .temperature{
+    color: cornflowerblue;
+}
+
+li span {
+    display: block;
+    padding: 5px 0;
+    
 }
